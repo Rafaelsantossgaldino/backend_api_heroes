@@ -1,10 +1,10 @@
-class HerosController < ApplicationController
+class HeroesController < ApplicationController
   before_action :set_hero, only: [:show, :update, :destroy]
 
   def index
-    @heros = Hero.all
+    @heroes = Hero.all
 
-    render json: @heros
+    render json: @heroes
   end
 
   def show
@@ -34,7 +34,7 @@ class HerosController < ApplicationController
   end
 
   private
-  
+
   def set_hero
     @hero = Hero.find(params[:id])
   end
