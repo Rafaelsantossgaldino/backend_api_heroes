@@ -72,25 +72,6 @@ If you want to import the above requests into [Insomnia](https://insomnia.rest/d
 
 It will be necessary to install the plugin [insomnia-plugin-dotenv](https://insomnia.rest/plugins/insomnia-plugin-dotenv).
 
-Create an environment variable file at the root of the project to add sensitive data:
-
-```bash
-touch .env.development
-```
-
-Add the contents below to the file above:
-
-```bash
-token=anyTokenCanBeUsed
-```
-
 In Insomnia, go to `Manage Environments` and set the `envFilePath` value to the file path `.env.development`:
-
-```json
-{
-  "baseUrl": "http://localhost:3000/api",
-  "envFilePath": "/path/to/file/your_repo/.env.development"
-}
-```
 
 Any `.env.*` file is being ignored by this project's GIT.
