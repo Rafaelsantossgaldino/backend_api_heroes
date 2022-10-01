@@ -1,4 +1,4 @@
-# Tour Of Heroes API
+# Bacnk-End Heroes API
 
 Ruby on Rails 6.
 
