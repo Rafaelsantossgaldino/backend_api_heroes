@@ -52,6 +52,7 @@ The backend is available at `http://localhost:3000`.
 ### Include a Header Authorization
 
 For all requests, use an **Authorization header**, of size >= 10 characters, so that you can only manipulate your data, for example:
+
 Authorization = 1b3283a5f3b1e80b62db5a82e6b87
 
 ### API Endpoint
