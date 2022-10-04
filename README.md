@@ -50,6 +50,7 @@ The backend is available at `http://localhost:3000`.
 ## Using the HEROES API
 
 ### Include a Header Authorization
+Authorization = 1b3283a5f3b1e80b62db5a82e6b87
 
 For all requests, use an **Authorization header**, of size >= 10 characters, so that you can only manipulate your data, for example:
 
@@ -60,7 +61,7 @@ The following endpoints are available:
 | Endpoints                   | Usage                                     | Params             |
 | --------------------------- | ----------------------------------------- | ------------------ |
 | `GET /api/heroes`           | Get all of the heroes.                    |                    |
-| `GET /api/heroes?name=term` | Get all heroes with `name` like a `term`. | **term**: [String] |
+| `GET /api/heroes`           | Get all heroes                            |                    |
 | `GET /api/heroes/:id`       | Get the details of a single hero.         |                    |
 | `POST /api/heroes`          | Add a new hero.                           | **name**: [String] |
 | `PUT /api/heroes/:id`       | Edit the details of an existing hero.     | **name**: [String] |
@@ -72,6 +73,4 @@ If you want to import the above requests into [Insomnia](https://insomnia.rest/d
 
 It will be necessary to install the plugin [insomnia-plugin-dotenv](https://insomnia.rest/plugins/insomnia-plugin-dotenv).
 
-In Insomnia, go to `Manage Environments` and set the `envFilePath` value to the file path `.env.development`:
 
-Any `.env.*` file is being ignored by this project's GIT.
