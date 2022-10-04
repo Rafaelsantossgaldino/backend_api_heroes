@@ -43,6 +43,6 @@ class Api::HeroesController < ApplicationController
   end
 
   def hero_params
-    params.require(:hero).permit(:name, :description, :atack, :defense)
+    params.require(:hero).permit(:name, :description, :atack, :defense, :image)
   end
 end
