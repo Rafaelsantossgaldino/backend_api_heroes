@@ -1,8 +1,11 @@
 class Api::HeroesController < ApplicationController
+  include Authenticable
+  
+  before_action :authenticate_with_token
   before_action :set_hero, only: [:show, :update, :destroy]
 
   def index
-    @heroes = Hero.all.order_by_name
+    @heroes = Hero.all.sorted_by_name
 
     render json: @heroes
   end
